@@ -4,11 +4,15 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
+import com.nipun.kaagaz_scanner_assignment.db.convertors.ImageConverter
 
 /**
  * This is Database abstract class which is used for a Database of room with @Database annotation
  */
 @Database(entities = [MyDataEntity::class], version = 1)
+@TypeConverters(value = [ImageConverter::class])
+
 abstract class MyDataDatabase : RoomDatabase() {
 
     abstract fun getMyDao(): MyDataDao

@@ -13,7 +13,7 @@ class ImageViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_image)
-        val image =intent.getStringExtra("name")
+        val image =intent.getStringExtra("image")
         Glide.with(this).load(image).into(iv_Image)
     }
 }
