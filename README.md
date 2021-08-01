@@ -6,7 +6,7 @@
 
 <p align="center">  
 This is a Camera App android project based on modern Android application tech-stacks and MVVM architecture. In this app user can capture the image and also take multiple photos in one go. When user capture the image it will 
-save into the Room database. We can also preview all the images which was saved in the database.
+save into the Room database. We can also preview all the images and fetch the image from the database.
 </p>
 
 
